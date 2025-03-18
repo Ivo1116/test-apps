@@ -1,0 +1,7 @@
+applications:
+- name: server-app
+  memory: 1G
+  disk_quota: 256MB
+  buildpack: go_buildpack
+  health-check-type: process
+  instances: 1

@@ -1,0 +1,10 @@
+applications:
+- name: client-app
+  memory: 25MB
+  disk_quota: 256MB
+  buildpacks: [go_buildpack]
+  env:
+      url: https://server-app-terrific-meerkat-vd.cfapps.lod-aws-0224.cfrt-sof.sapcloud.io
+      interval: 1000
+  health-check-type: process
+  instances: 1
